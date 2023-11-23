@@ -7,6 +7,7 @@ import {
 } from './../util';
 
 @Component({
+  standalone: true,
   selector: 'app-async-pipe',
   templateUrl: './async-pipe.component.html'
 })

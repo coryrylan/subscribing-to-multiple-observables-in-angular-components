@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import {
   getSingleValueObservable,
-  getDelayedValueObservable,
-  getMultiValueObservable
+  getDelayedValueObservable
 } from './../util';
 
 @Component({
+  standalone: true,
   selector: 'app-fork-join-operator',
   templateUrl: './fork-join-operator.component.html'
 })

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -9,6 +9,7 @@ import {
 } from './../util';
 
 @Component({
+  standalone: true,
   selector: 'app-combine-latest-operator',
   templateUrl: './combine-latest-operator.component.html'
 })

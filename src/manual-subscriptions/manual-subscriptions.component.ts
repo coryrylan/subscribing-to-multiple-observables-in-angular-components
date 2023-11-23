@@ -8,14 +8,15 @@ import {
 } from './../util';
 
 @Component({
+  standalone: true,
   selector: 'app-manual-subscriptions',
   templateUrl: './manual-subscriptions.component.html'
 })
 export class ManualSubscriptionsComponent {
-  first: string;
-  second: string;
-  third: number;
-  thirdSubscription: Subscription;
+  first!: string;
+  second!: string;
+  third!: number;
+  thirdSubscription!: Subscription;
 
   ngOnInit() {
     getSingleValueObservable()
