@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import 'zone.js';
+import { CommonModule } from '@angular/common';
 import { ManualSubscriptionsComponent } from './manual-subscriptions/manual-subscriptions.component';
 import { AsyncPipeComponent } from './async-pipe/async-pipe.component';
 import { ForkJoinOperatorComponent } from './fork-join-operator/fork-join-operator.component';
@@ -10,7 +11,7 @@ import { AsyncPipeObjectComponent } from './async-pipe-object/async-pipe-object.
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ManualSubscriptionsComponent, AsyncPipeComponent, ForkJoinOperatorComponent, CombineLatestOperatorComponent, AsyncPipeObjectComponent],
+  imports: [CommonModule, ManualSubscriptionsComponent, AsyncPipeComponent, ForkJoinOperatorComponent, CombineLatestOperatorComponent, AsyncPipeObjectComponent],
   template: `
     <h1>Subscribing to multiple Observables in Angular Templates</h1>
 

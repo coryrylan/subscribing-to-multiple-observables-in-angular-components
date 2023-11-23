@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 import {
@@ -8,6 +9,7 @@ import {
 
 @Component({
   standalone: true,
+  imports: [CommonModule],
   selector: 'app-async-pipe-object',
   templateUrl: './async-pipe-object.component.html'
 })

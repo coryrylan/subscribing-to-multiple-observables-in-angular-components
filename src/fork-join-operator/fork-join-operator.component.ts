@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -9,6 +10,7 @@ import {
 
 @Component({
   standalone: true,
+  imports: [CommonModule],
   selector: 'app-fork-join-operator',
   templateUrl: './fork-join-operator.component.html'
 })

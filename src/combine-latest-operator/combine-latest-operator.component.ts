@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -10,6 +11,7 @@ import {
 
 @Component({
   standalone: true,
+  imports: [CommonModule],
   selector: 'app-combine-latest-operator',
   templateUrl: './combine-latest-operator.component.html'
 })
